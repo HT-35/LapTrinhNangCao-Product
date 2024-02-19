@@ -39,8 +39,10 @@ const GetProductByIDController = async (req, res) => {
     //   status: true,
     //   data: getProductByID,
     // });
+    // RDF
     res.status(200).json({
-      getProductByID,
+      status: true,
+      data: getProductByID,
     });
   } catch (error) {
     // res.status(400).json(error);
